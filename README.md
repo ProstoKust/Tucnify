@@ -1,4 +1,4 @@
 # Tucnify
 Modern Telegram Bot with Google's Gemini AI integration
 
-![tucnify](https://github.com/user-attachments/assets/106e4443-227a-4794-a0da-828af7a5e16b)
+![TucnifyPreview](https://github.com/user-attachments/assets/7461886e-b065-4c88-b186-3669bbcb0874)
