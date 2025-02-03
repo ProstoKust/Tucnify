@@ -10,7 +10,7 @@ GEMINI_API_URL = f'https://generativelanguage.googleapis.com/v1beta/models/gemin
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 
-WELCOME_MESSAGE = """👋 *Привет! Tucnify является бесплатным AI-ботом, вы можете спросить его напрямую в чате*"""
+WELCOME_MESSAGE = """👋 *Hi! Tucnify is a free AI bot, you can ask it directly in the chat*"""
 
 async def generate_gemini_response(prompt: str) -> str:
     headers = {'Content-Type': 'application/json'}
@@ -23,13 +23,13 @@ async def generate_gemini_response(prompt: str) -> str:
     async with aiohttp.ClientSession() as session:
         async with session.post(GEMINI_API_URL, json=payload, headers=headers) as response:
             if response.status != 200:
-                return "⚠️ Ошибка при обращении к API"
+                return "⚠️ Error accessing the API"
 
             json_response = await response.json()
             try:
                 return json_response['candidates'][0]['content']['parts'][0]['text']
             except (KeyError, IndexError):
-                return "❌ Не удалось обработать ответ"
+                return "❌ Couldn't process the response"
 
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message):
