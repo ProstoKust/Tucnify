@@ -3,8 +3,8 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from aiogram.enums import ParseMode
 
-API_TOKEN = ' ' #Telegram Bot API token
-GEMINI_API_KEY = ' ' #Gemini API key
+API_TOKEN = ' ' #Telegram Bot API Token
+GEMINI_API_KEY = ' ' #Gemini API Key
 GEMINI_API_URL = f'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}'
 
 bot = Bot(token=API_TOKEN)
