@@ -6,7 +6,7 @@ Modern Telegram Bot with Google's Gemini AI integration
 # Getting Started
 ## Installation
 1. Install Libraries: `pip install aiogram`
-2. Replace API Keys: Replace the placeholder values with your actual keys for `API_TOKEN` and `GEMINI_API_KEY`
+2. Replace API Keys: Replace the placeholder values with your actual keys for `DEFAULT_API_TOKEN` and `DEFAULT_GEMINI_KEY`
 
 Great! Try to run the bot. Remember to keep your API keys secure and do not share them publicly.
 
